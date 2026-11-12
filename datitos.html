@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="btn-volver">Volver al Menu</a>
+    </nav>
+    <script>
+        let continuar=confirm("Desea agregar datos");
+        let nombre=(prompt("Ingresa tu nombre"));
+        let edad=Number(prompt("Ingresa tu edad"));Number
+        let especialidad=(prompt("Ingresa tu especialidad"));
+        let correo=(prompt("Ingresa tu correo electronico"));
+        let telefono=Number(prompt("Ingresa tu numero de telefono"));
+        if (continuar){
+            document.write('tu nombre es: '+nombre+"<br>");
+            document.write('tu edad es: '+edad+"<br>");
+            document.write('tu especialidad es: '+especialidad+"<br>");
+            document.write('tu correo es: '+correo+"<br>");
+            document.write('tu telefono es: '+telefono+"<br>");
+        } else {
+            alert("tengo fojera");
+        }
+    </script>
+</body>
+</html>

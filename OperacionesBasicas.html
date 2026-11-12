@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <<link rel="stylesheet" href="Estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="btn-volver">Volver al <Menu></Menu></a>
+    </nav>
+    <script>
+    let N1 = Number(prompt("Introduce el primer número"));
+    let N2 = Number(prompt("Introduce el segundo número"));
+    let operacion = prompt("¿Qué operación quieres? (suma, resta, multiplicacion, division)");
+    let resultado;
+
+    switch (operacion) {
+        case "suma":
+            resultado = N1 + N2;
+            break;
+        case "resta":
+            resultado = N1 - N2;
+            break;
+        case "multiplicacion":
+            resultado = N1 * N2;
+            break;
+        case "division":
+            resultado = N1 / N2;
+            break;
+        default:
+            resultado = "esa operación no existe";
+    }
+
+    document.write("El resultado de tu " + operacion + " es: " + resultado);
+</script>
+</body>
+</html>
